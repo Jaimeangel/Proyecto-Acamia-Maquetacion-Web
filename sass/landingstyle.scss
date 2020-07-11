@@ -26,33 +26,33 @@ header{
            margin-left: 30px;
        }
     }
-    .btn-menu{
+    .menu{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: end;
         width: 100%;
         position: absolute;
-        .btn-end #btn-check:checked ~ .nav{
+        &__navegador #btn-check:checked ~ .menu__navegador__nav{
             left: 0;
             transition: 0.8s;
         }
-        .btn-end #btn-check:checked ~ .menu-burguer .menu-bar.primer-linea{
+        &__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.primer-linea{
             transform: rotate(45deg);
             transform-origin: 0% 0%;
         }
-        .btn-end #btn-check:checked ~ .menu-burguer .menu-bar.segunda-linea{
+        &__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.segunda-linea{
             opacity: 0;
         }
-        .btn-end #btn-check:checked ~ .menu-burguer .menu-bar.tercer-linea{
+        &__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.tercer-linea{
             transform: rotate(-45deg);
             transform-origin: 0% 100%;
         }
-        .btn-end{
+        &__navegador{
             input{
                 display: none;
             }
-            .menu-burguer{
+            &__x-boton{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
@@ -67,7 +67,7 @@ header{
                     margin-bottom: 6px;
                 }
             }
-            .nav{
+            &__nav{
                 position: absolute;
                 font-family: 'IBM Plex Mono', monospace;
                 width: 100%;

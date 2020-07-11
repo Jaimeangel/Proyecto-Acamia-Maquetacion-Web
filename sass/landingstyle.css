@@ -37,7 +37,7 @@ header img {
   }
 }
 
-header .btn-menu {
+header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,35 +54,35 @@ header .btn-menu {
   position: absolute;
 }
 
-header .btn-menu .btn-end #btn-check:checked ~ .nav {
+header .menu__navegador #btn-check:checked ~ .menu__navegador__nav {
   left: 0;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 
-header .btn-menu .btn-end #btn-check:checked ~ .menu-burguer .menu-bar.primer-linea {
+header .menu__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.primer-linea {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
 }
 
-header .btn-menu .btn-end #btn-check:checked ~ .menu-burguer .menu-bar.segunda-linea {
+header .menu__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.segunda-linea {
   opacity: 0;
 }
 
-header .btn-menu .btn-end #btn-check:checked ~ .menu-burguer .menu-bar.tercer-linea {
+header .menu__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.tercer-linea {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: 0% 100%;
           transform-origin: 0% 100%;
 }
 
-header .btn-menu .btn-end input {
+header .menu__navegador input {
   display: none;
 }
 
-header .btn-menu .btn-end .menu-burguer {
+header .menu__navegador__x-boton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,19 +97,19 @@ header .btn-menu .btn-end .menu-burguer {
 }
 
 @media only screen and (min-width: 400px) {
-  header .btn-menu .btn-end .menu-burguer {
+  header .menu__navegador__x-boton {
     display: none;
   }
 }
 
-header .btn-menu .btn-end .menu-burguer .menu-bar {
+header .menu__navegador__x-boton .menu-bar {
   width: 24px;
   height: 2px;
   background-color: black;
   margin-bottom: 6px;
 }
 
-header .btn-menu .btn-end .nav {
+header .menu__navegador__nav {
   position: absolute;
   font-family: 'IBM Plex Mono', monospace;
   width: 100%;
@@ -118,13 +118,13 @@ header .btn-menu .btn-end .nav {
 }
 
 @media only screen and (min-width: 400px) {
-  header .btn-menu .btn-end .nav {
+  header .menu__navegador__nav {
     left: 5%;
     width: 95%;
   }
 }
 
-header .btn-menu .btn-end .nav ul {
+header .menu__navegador__nav ul {
   background-color: #0000EC;
   color: white;
   display: -webkit-box;
@@ -137,7 +137,7 @@ header .btn-menu .btn-end .nav ul {
 }
 
 @media only screen and (min-width: 400px) {
-  header .btn-menu .btn-end .nav ul {
+  header .menu__navegador__nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -150,25 +150,25 @@ header .btn-menu .btn-end .nav ul {
   }
 }
 
-header .btn-menu .btn-end .nav ul li {
+header .menu__navegador__nav ul li {
   width: 100%;
   text-align: left;
   padding: 24px 16px;
   list-style: none;
 }
 
-header .btn-menu .btn-end .nav ul li:hover {
+header .menu__navegador__nav ul li:hover {
   text-decoration: line-through;
   color: #00F3BB;
 }
 
-header .btn-menu .btn-end .nav ul li:active {
+header .menu__navegador__nav ul li:active {
   text-decoration: line-through;
   color: #060A24 56%;
 }
 
 @media only screen and (min-width: 400px) {
-  header .btn-menu .btn-end .nav ul li {
+  header .menu__navegador__nav ul li {
     width: auto;
     padding: 26px 48px;
   }
