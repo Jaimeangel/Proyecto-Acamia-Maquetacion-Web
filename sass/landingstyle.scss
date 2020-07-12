@@ -33,21 +33,27 @@ header{
         justify-content: end;
         width: 100%;
         position: absolute;
-        &__navegador #btn-check:checked ~ .menu__navegador__nav{
-            left: 0;
-            transition: 0.8s;
-        }
-        &__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.primer-linea{
-            transform: rotate(45deg);
-            transform-origin: 0% 0%;
-        }
-        &__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.segunda-linea{
-            opacity: 0;
-        }
-        &__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.tercer-linea{
-            transform: rotate(-45deg);
-            transform-origin: 0% 100%;
-        }
+        &__navegador #btn-check:checked {
+            &~ .menu__navegador__nav{
+                left: 0;
+                transition: 0.8s;
+            }
+            &~ .menu__navegador__x-boton{ 
+                .menu-bar{
+                    &.primer-linea{
+                        transform: rotate(45deg);
+                        transform-origin: 0% 0%;
+                    }
+                    &.segunda-linea{
+                        opacity: 0;
+                    }
+                    &.tercer-linea{
+                        transform: rotate(-45deg);
+                        transform-origin: 0% 100%;
+                    }
+                }
+            }
+        }        
         &__navegador{
             input{
                 display: none;
