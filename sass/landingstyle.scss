@@ -33,12 +33,12 @@ header{
         justify-content: end;
         width: 100%;
         position: absolute;
-        &__navegador #btn-check:checked {
-            &~ .menu__navegador__nav{
+        &__nav #btn-check:checked {
+            &~ .menu__nav__nav-list{
                 left: 0;
                 transition: 0.8s;
             }
-            &~ .menu__navegador__x-boton{ 
+            &~ .menu__nav__bot{ 
                 .menu-bar{
                     &.primer-linea{
                         transform: rotate(45deg);
@@ -54,11 +54,11 @@ header{
                 }
             }
         }        
-        &__navegador{
+        &__nav{
             input{
                 display: none;
             }
-            &__x-boton{
+            &__bot{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
@@ -73,7 +73,7 @@ header{
                     margin-bottom: 6px;
                 }
             }
-            &__nav{
+            &__nav-list{
                 position: absolute;
                 font-family: 'IBM Plex Mono', monospace;
                 width: 100%;
@@ -117,8 +117,8 @@ header{
         }
     }
 }
-.first-promoted{
-    .oneline{
+.intro{
+    &__one{
         color: #060A24;
         margin-left: 16px;
         margin-top: 29px;
@@ -128,7 +128,7 @@ header{
             display: none;
         }
     }
-    .oneline-hideen{
+    &__one-hi{
         color: #060A24;
         display: none;
         @include desktop{
@@ -140,7 +140,7 @@ header{
             font-size: 64px;
         }
     }
-    .twoline{
+    &__two{
         color: #060A24;
         position: relative;
         margin: 16px;
@@ -152,7 +152,7 @@ header{
             display: none;
         }
     }
-    .twoline-hideen{
+    &__two-hi{
         color: #060A24;
         display: none;
         @include desktop{
@@ -165,8 +165,8 @@ header{
             margin-left: 120px;
         }
     }
-    .boto-first{
-        button{
+    .bot{
+        &__sty{
             font-family: 'IBM Plex Mono', monospace;
             background-color: #00F3BB;
             color: #060A24;
@@ -196,7 +196,7 @@ header{
     @include desktop{
         height: 1000px;
     }
-    .title{
+    &__title{
         transform: skewY(6deg);
         position: relative;
         top: 64px;
@@ -217,7 +217,7 @@ header{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        iframe{
+        &__ifr{
             display: flex;
             width: 95%;
             margin-left: 11px;

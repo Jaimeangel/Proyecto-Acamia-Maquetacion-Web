@@ -54,35 +54,35 @@ header .menu {
   position: absolute;
 }
 
-header .menu__navegador #btn-check:checked ~ .menu__navegador__nav {
+header .menu__nav #btn-check:checked ~ .menu__nav__nav-list {
   left: 0;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 
-header .menu__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.primer-linea {
+header .menu__nav #btn-check:checked ~ .menu__nav__bot .menu-bar.primer-linea {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
 }
 
-header .menu__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.segunda-linea {
+header .menu__nav #btn-check:checked ~ .menu__nav__bot .menu-bar.segunda-linea {
   opacity: 0;
 }
 
-header .menu__navegador #btn-check:checked ~ .menu__navegador__x-boton .menu-bar.tercer-linea {
+header .menu__nav #btn-check:checked ~ .menu__nav__bot .menu-bar.tercer-linea {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: 0% 100%;
           transform-origin: 0% 100%;
 }
 
-header .menu__navegador input {
+header .menu__nav input {
   display: none;
 }
 
-header .menu__navegador__x-boton {
+header .menu__nav__bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,19 +97,19 @@ header .menu__navegador__x-boton {
 }
 
 @media only screen and (min-width: 400px) {
-  header .menu__navegador__x-boton {
+  header .menu__nav__bot {
     display: none;
   }
 }
 
-header .menu__navegador__x-boton .menu-bar {
+header .menu__nav__bot .menu-bar {
   width: 24px;
   height: 2px;
   background-color: black;
   margin-bottom: 6px;
 }
 
-header .menu__navegador__nav {
+header .menu__nav__nav-list {
   position: absolute;
   font-family: 'IBM Plex Mono', monospace;
   width: 100%;
@@ -118,13 +118,13 @@ header .menu__navegador__nav {
 }
 
 @media only screen and (min-width: 400px) {
-  header .menu__navegador__nav {
+  header .menu__nav__nav-list {
     left: 5%;
     width: 95%;
   }
 }
 
-header .menu__navegador__nav ul {
+header .menu__nav__nav-list ul {
   background-color: #0000EC;
   color: white;
   display: -webkit-box;
@@ -137,7 +137,7 @@ header .menu__navegador__nav ul {
 }
 
 @media only screen and (min-width: 400px) {
-  header .menu__navegador__nav ul {
+  header .menu__nav__nav-list ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -150,31 +150,31 @@ header .menu__navegador__nav ul {
   }
 }
 
-header .menu__navegador__nav ul li {
+header .menu__nav__nav-list ul li {
   width: 100%;
   text-align: left;
   padding: 24px 16px;
   list-style: none;
 }
 
-header .menu__navegador__nav ul li:hover {
+header .menu__nav__nav-list ul li:hover {
   text-decoration: line-through;
   color: #00F3BB;
 }
 
-header .menu__navegador__nav ul li:active {
+header .menu__nav__nav-list ul li:active {
   text-decoration: line-through;
   color: #060A24 56%;
 }
 
 @media only screen and (min-width: 400px) {
-  header .menu__navegador__nav ul li {
+  header .menu__nav__nav-list ul li {
     width: auto;
     padding: 26px 48px;
   }
 }
 
-.first-promoted .oneline {
+.intro__one {
   color: #060A24;
   margin-left: 16px;
   margin-top: 29px;
@@ -183,18 +183,18 @@ header .menu__navegador__nav ul li:active {
 }
 
 @media only screen and (min-width: 400px) {
-  .first-promoted .oneline {
+  .intro__one {
     display: none;
   }
 }
 
-.first-promoted .oneline-hideen {
+.intro__one-hi {
   color: #060A24;
   display: none;
 }
 
 @media only screen and (min-width: 400px) {
-  .first-promoted .oneline-hideen {
+  .intro__one-hi {
     display: block;
     color: black;
     margin-top: 80px;
@@ -204,7 +204,7 @@ header .menu__navegador__nav ul li:active {
   }
 }
 
-.first-promoted .twoline {
+.intro__two {
   color: #060A24;
   position: relative;
   margin: 16px;
@@ -215,18 +215,18 @@ header .menu__navegador__nav ul li:active {
 }
 
 @media only screen and (min-width: 400px) {
-  .first-promoted .twoline {
+  .intro__two {
     display: none;
   }
 }
 
-.first-promoted .twoline-hideen {
+.intro__two-hi {
   color: #060A24;
   display: none;
 }
 
 @media only screen and (min-width: 400px) {
-  .first-promoted .twoline-hideen {
+  .intro__two-hi {
     position: relative;
     width: 46%;
     display: block;
@@ -237,7 +237,7 @@ header .menu__navegador__nav ul li:active {
   }
 }
 
-.first-promoted .boto-first button {
+.intro .bot__sty {
   font-family: 'IBM Plex Mono', monospace;
   background-color: #00F3BB;
   color: #060A24;
@@ -247,13 +247,13 @@ header .menu__navegador__nav ul li:active {
   font-size: 16px;
 }
 
-.first-promoted .boto-first button:hover {
+.intro .bot__sty:hover {
   background: -webkit-gradient(linear, right top, left bottom, from(#0000FE), to(#00F0B8));
   background: linear-gradient(top right, #0000FE, #00F0B8);
 }
 
 @media only screen and (min-width: 400px) {
-  .first-promoted .boto-first button {
+  .intro .bot__sty {
     margin-left: 120px;
     margin-top: 36px;
     padding: 16px 59px;
@@ -283,7 +283,7 @@ header .menu__navegador__nav ul li:active {
   }
 }
 
-.main .title {
+.main__title {
   -webkit-transform: skewY(6deg);
           transform: skewY(6deg);
   position: relative;
@@ -296,7 +296,7 @@ header .menu__navegador__nav ul li:active {
 }
 
 @media only screen and (min-width: 400px) {
-  .main .title {
+  .main__title {
     margin-top: 70px;
     margin-left: 120px;
   }
@@ -315,7 +315,7 @@ header .menu__navegador__nav ul li:active {
       grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.main .container iframe {
+.main .container__ifr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,7 +324,7 @@ header .menu__navegador__nav ul li:active {
 }
 
 @media only screen and (min-width: 400px) {
-  .main .container iframe {
+  .main .container__ifr {
     width: 100%;
     width: 584px;
     margin-left: 50px;
