@@ -4,11 +4,15 @@
     border: 0;
     box-sizing: border-box;
 }
+//Media Queries//
+
 @mixin desktop {
     @media only screen and (min-width:400px){
         @content;
     }
 }
+//Variables de Colores// 
+
 $prin_color:#060A24;
 $bot_color: #00F3BB;
 $prin_back:#0000FE;
@@ -224,7 +228,7 @@ header{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         &__ifr{
-            display: none;
+            display: flex;
             width: 95%;
             margin-left: 11px;
             @include desktop{

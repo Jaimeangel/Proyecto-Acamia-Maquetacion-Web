@@ -316,7 +316,9 @@ header .menu__nav__nav-list ul li:active {
 }
 
 .main .cont__ifr {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 95%;
   margin-left: 11px;
 }
