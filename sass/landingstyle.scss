@@ -9,12 +9,14 @@
         @content;
     }
 }
-$prin_color:#060A24
-$bot_color: #00F3BB
-$grad_color: linear-gradient(top right,#0000FE,#00F0B8)
+$prin_color:#060A24;
+$bot_color: #00F3BB;
+$prin_back:#0000FE;
+$grad_prin: linear-gradient(to top,#0000FE,#0000FF);
+$grad_bot: linear-gradient(to left,#0000FE,#00F0B8);
 
 header{
-    color: #060A24;
+    color: $prin_color;
     font-size: 15px;
     width: 100%;
     display: flex;
@@ -88,7 +90,7 @@ header{
                     width: 95%;
                 }
                 ul{
-                    background-color: #0000EC;
+                    background-color: $prin_back;
                     color: white;
                     display: flex;
                     flex-direction: column;
@@ -105,11 +107,11 @@ header{
                         list-style: none;
                         &:hover{
                             text-decoration: line-through;
-                            color: #00F3BB;
+                            color: $bot_color
                         }
                         &:active{
                             text-decoration: line-through;
-                            color: #060A24 56%;
+                            color: $prin_color 56%;
                         }
                         @include desktop{
                             width: auto;
@@ -137,7 +139,6 @@ header{
         display: none;
         @include desktop{
             display: block;
-            color: black;
             margin-top: 80px;
             margin-left: 120px;
             font-family: 'IBM Plex Sans', sans-serif;
@@ -172,15 +173,15 @@ header{
     .bot{
         &__sty{
             font-family: 'IBM Plex Mono', monospace;
-            background-color: $bot_color
-            color: $prin_color
+            background-color: $bot_color;
+            color: $prin_color;
             padding: 13px 96px;
             margin: 20px 16px;
             margin-bottom: 40px;
             font-size: 16px;
             &:hover{
                 color: white;
-                background: $grad_color;
+                background: $grad_bot;
             }
             @include desktop{
                 margin-left: 120px;
@@ -193,7 +194,7 @@ header{
 .main{
     width: 100%;
     height: 1300px;
-    background: linear-gradient(#0000FF,#0000A3);
+    background: $grad_prin;
     transform: skewY(-6deg);
     margin-top: 4px;
     display: flex;
@@ -223,7 +224,7 @@ header{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         &__ifr{
-            display: flex;
+            display: none;
             width: 95%;
             margin-left: 11px;
             @include desktop{
@@ -257,7 +258,7 @@ header{
         }
     }
     .text{
-        color: #060A24;
+        color: $prin_color;
         position: relative;
         top: -120px;
         display: flex;
@@ -339,7 +340,7 @@ header{
 .topi{
     &__title{
         h1{
-            color: #060A24;
+            color: $prin_color;
             font-size: 36px;
             font-family: 'IBM Plex Sans', sans-serif;
             width: 80%;
@@ -375,7 +376,7 @@ header{
                 grid-template-rows: 104px 80px;
             }
             h3{
-                color: #060A24;
+                color: $prin_color;
                 text-align: center;
                 font-size: 24px;
                 line-height: 32px;
@@ -390,15 +391,14 @@ header{
 .end{
     width: 100%;
     height: 385px;
-    background: linear-gradient(to left,#0000FF,#0000A3);
     transform: skewY(-6deg);
+    background: $grad_prin;
     @include desktop{
         height: 520px;
     }
     &__p{
         p{
             transform: skewY(6deg);
-            color: #060A24;
             text-align: center;
             position: relative;
             top: 64px;
@@ -418,14 +418,15 @@ header{
         position: relative;
         top: 64px;
         font-family: 'IBM Plex Mono', monospace;
-        background-color: #00F3BB;
+        background-color: $bot_color;
         padding: 13px 28px;
         margin-top: 36px;
         margin-bottom: 60px;
         margin-left: 26px;
         font-size: 16px;
         &:hover{
-            background: linear-gradient(top right,#0000FE,#00F0B8);
+            color: white;
+            background: $grad_bot;
         }
         @include desktop{
             font-size: 18px;
@@ -435,6 +436,7 @@ header{
     }
 }
 footer{
+    color: $prin_color;
     display: flex;
     flex-direction: column;
     @include desktop{

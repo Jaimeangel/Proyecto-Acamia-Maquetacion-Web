@@ -125,7 +125,7 @@ header .menu__nav__nav-list {
 }
 
 header .menu__nav__nav-list ul {
-  background-color: #0000EC;
+  background-color: #0000FE;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +196,6 @@ header .menu__nav__nav-list ul li:active {
 @media only screen and (min-width: 400px) {
   .intro__one-hi {
     display: block;
-    color: black;
     margin-top: 80px;
     margin-left: 120px;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -249,8 +248,8 @@ header .menu__nav__nav-list ul li:active {
 
 .intro .bot__sty:hover {
   color: white;
-  background: -webkit-gradient(linear, right top, left bottom, from(#0000FE), to(#00F0B8));
-  background: linear-gradient(top right, #0000FE, #00F0B8);
+  background: -webkit-gradient(linear, right top, left top, from(#0000FE), to(#00F0B8));
+  background: linear-gradient(to left, #0000FE, #00F0B8);
 }
 
 @media only screen and (min-width: 400px) {
@@ -264,8 +263,8 @@ header .menu__nav__nav-list ul li:active {
 .main {
   width: 100%;
   height: 1300px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
-  background: linear-gradient(#0000FF, #0000A3);
+  background: -webkit-gradient(linear, left bottom, left top, from(#0000FE), to(#0000FF));
+  background: linear-gradient(to top, #0000FE, #0000FF);
   -webkit-transform: skewY(-6deg);
           transform: skewY(-6deg);
   margin-top: 4px;
@@ -317,9 +316,7 @@ header .menu__nav__nav-list ul li:active {
 }
 
 .main .cont__ifr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 95%;
   margin-left: 11px;
 }
@@ -572,10 +569,10 @@ header .menu__nav__nav-list ul li:active {
 .end {
   width: 100%;
   height: 385px;
-  background: -webkit-gradient(linear, right top, left top, from(#0000FF), to(#0000A3));
-  background: linear-gradient(to left, #0000FF, #0000A3);
   -webkit-transform: skewY(-6deg);
           transform: skewY(-6deg);
+  background: -webkit-gradient(linear, left bottom, left top, from(#0000FE), to(#0000FF));
+  background: linear-gradient(to top, #0000FE, #0000FF);
 }
 
 @media only screen and (min-width: 400px) {
@@ -587,7 +584,6 @@ header .menu__nav__nav-list ul li:active {
 .end__p p {
   -webkit-transform: skewY(6deg);
           transform: skewY(6deg);
-  color: #060A24;
   text-align: center;
   position: relative;
   top: 64px;
@@ -620,8 +616,9 @@ header .menu__nav__nav-list ul li:active {
 }
 
 .end__bot:hover {
-  background: -webkit-gradient(linear, right top, left bottom, from(#0000FE), to(#00F0B8));
-  background: linear-gradient(top right, #0000FE, #00F0B8);
+  color: white;
+  background: -webkit-gradient(linear, right top, left top, from(#0000FE), to(#00F0B8));
+  background: linear-gradient(to left, #0000FE, #00F0B8);
 }
 
 @media only screen and (min-width: 400px) {
@@ -633,6 +630,7 @@ header .menu__nav__nav-list ul li:active {
 }
 
 footer {
+  color: #060A24;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
