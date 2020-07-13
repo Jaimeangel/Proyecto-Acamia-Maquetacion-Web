@@ -9,6 +9,10 @@
         @content;
     }
 }
+$prin_color:#060A24
+$bot_color: #00F3BB
+$grad_color: linear-gradient(top right,#0000FE,#00F0B8)
+
 header{
     color: #060A24;
     font-size: 15px;
@@ -119,7 +123,7 @@ header{
 }
 .intro{
     &__one{
-        color: #060A24;
+        color: $prin_color;
         margin-left: 16px;
         margin-top: 29px;
         font-family: 'IBM Plex Sans', sans-serif;
@@ -129,7 +133,7 @@ header{
         }
     }
     &__one-hi{
-        color: #060A24;
+        color: $prin_color;
         display: none;
         @include desktop{
             display: block;
@@ -141,7 +145,7 @@ header{
         }
     }
     &__two{
-        color: #060A24;
+        color: $prin_color;
         position: relative;
         margin: 16px;
         line-height: 20px;
@@ -153,7 +157,7 @@ header{
         }
     }
     &__two-hi{
-        color: #060A24;
+        color: $prin_color;
         display: none;
         @include desktop{
             position: relative;
@@ -168,14 +172,15 @@ header{
     .bot{
         &__sty{
             font-family: 'IBM Plex Mono', monospace;
-            background-color: #00F3BB;
-            color: #060A24;
+            background-color: $bot_color
+            color: $prin_color
             padding: 13px 96px;
             margin: 20px 16px;
             margin-bottom: 40px;
             font-size: 16px;
             &:hover{
-                background: linear-gradient(top right,#0000FE,#00F0B8);
+                color: white;
+                background: $grad_color;
             }
             @include desktop{
                 margin-left: 120px;

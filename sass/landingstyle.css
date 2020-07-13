@@ -248,6 +248,7 @@ header .menu__nav__nav-list ul li:active {
 }
 
 .intro .bot__sty:hover {
+  color: white;
   background: -webkit-gradient(linear, right top, left bottom, from(#0000FE), to(#00F0B8));
   background: linear-gradient(top right, #0000FE, #00F0B8);
 }
