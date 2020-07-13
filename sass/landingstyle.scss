@@ -210,7 +210,7 @@ header{
             margin-left: 120px;
         }
     }
-    .container{
+    .cont{
         transform: skewY(6deg);
         position: relative;
         top: 64px;
@@ -234,13 +234,13 @@ header{
         }
     }
 }
-.nosotros{
+.us{
     display: flex;
     flex-direction: column;
     @include desktop{
         flex-direction: row;
     }
-    .phone{
+    &__pho{
         position: relative;
         top: -140px;
         img{
@@ -251,7 +251,7 @@ header{
             }
         }
     }
-    .texp{
+    .text{
         color: #060A24;
         position: relative;
         top: -120px;
@@ -262,7 +262,7 @@ header{
             margin-top: 50px;
             margin-left: 65px;
         }
-        .texp-title{
+        &__title{
             width: 60%;
             margin-left: 16px;
             p{
@@ -275,7 +275,7 @@ header{
                 }
             }
         }
-        .texp-parrafo{
+        &__parrafo{
             margin-left: 16px;
             margin-top: 8px;
             width: 80%;
@@ -295,10 +295,10 @@ header{
         }
     }
 }
-.galeria{
+.gal{
     position: relative;
     top: -80px;
-    h1{
+    &__title{
         font-size: 36px;
         font-family: 'IBM Plex Sans', sans-serif;
         width: 60%;
@@ -312,7 +312,7 @@ header{
             line-height: 62px;
         }
     }
-    .gal{
+    .pho{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,1fr);
@@ -320,12 +320,14 @@ header{
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(2,1fr);
         }
-        img{
-            display: flex;
-            width: 100%;
-            @include desktop{
+        &__img{
+            img{
+                display: flex;
                 width: 100%;
-            }
+                @include desktop{
+                    width: 100%;
+                }
+            }   
         }
     }
 }
