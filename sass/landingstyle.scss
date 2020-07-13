@@ -390,7 +390,7 @@ header{
     @include desktop{
         height: 520px;
     }
-    .p-end{
+    &__p{
         p{
             transform: skewY(6deg);
             color: #060A24;
@@ -408,7 +408,7 @@ header{
             }
         }
     }
-    button{
+    &__bot{
         transform: skewY(6deg);
         position: relative;
         top: 64px;

@@ -583,7 +583,7 @@ header .menu__nav__nav-list ul li:active {
   }
 }
 
-.end .p-end p {
+.end__p p {
   -webkit-transform: skewY(6deg);
           transform: skewY(6deg);
   color: #060A24;
@@ -597,14 +597,14 @@ header .menu__nav__nav-list ul li:active {
 }
 
 @media only screen and (min-width: 400px) {
-  .end .p-end p {
+  .end__p p {
     font-size: 48px;
     line-height: 62px;
     top: 180px;
   }
 }
 
-.end button {
+.end__bot {
   -webkit-transform: skewY(6deg);
           transform: skewY(6deg);
   position: relative;
@@ -618,13 +618,13 @@ header .menu__nav__nav-list ul li:active {
   font-size: 16px;
 }
 
-.end button:hover {
+.end__bot:hover {
   background: -webkit-gradient(linear, right top, left bottom, from(#0000FE), to(#00F0B8));
   background: linear-gradient(top right, #0000FE, #00F0B8);
 }
 
 @media only screen and (min-width: 400px) {
-  .end button {
+  .end__bot {
     font-size: 18px;
     top: 200px;
     margin-left: 500px;
