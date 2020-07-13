@@ -653,7 +653,7 @@ footer {
   }
 }
 
-footer .font-awesome ul {
+footer .font ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,21 +665,21 @@ footer .font-awesome ul {
 }
 
 @media only screen and (min-width: 400px) {
-  footer .font-awesome ul {
+  footer .font ul {
     margin-top: 40px;
     margin-right: 100px;
   }
 }
 
-footer .font-awesome ul li {
+footer .font ul li {
   list-style: none;
 }
 
-footer .font-awesome ul li:last-child i {
+footer .font ul li:last-child i {
   padding-right: 0px;
 }
 
-footer .font-awesome ul li i {
+footer .font ul li i {
   padding-right: 45px;
   font-size: 25px;
 }
