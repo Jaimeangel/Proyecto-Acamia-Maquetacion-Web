@@ -331,22 +331,24 @@ header{
         }
     }
 }
-.topics{
-    h1{
-        color: #060A24;
-        font-size: 36px;
-        font-family: 'IBM Plex Sans', sans-serif;
-        width: 80%;
-        margin-left: 16px;
-        margin-bottom: 40px;
-        @include desktop{
-            margin-left: 100px;
-            font-size: 48px;
-            line-height: 62px;
-            margin-bottom: 80px;
+.topi{
+    &__title{
+        h1{
+            color: #060A24;
+            font-size: 36px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            width: 80%;
+            margin-left: 16px;
+            margin-bottom: 40px;
+            @include desktop{
+                margin-left: 100px;
+                font-size: 48px;
+                line-height: 62px;
+                margin-bottom: 80px;
+            }
         }
     }
-    .img-top{
+    .svg{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -358,7 +360,7 @@ header{
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
-        .boxi{
+        &__sub{
             justify-content: center;
             display: grid;
             grid-template-columns: 288px;

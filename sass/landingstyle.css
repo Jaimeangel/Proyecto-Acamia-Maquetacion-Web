@@ -494,7 +494,7 @@ header .menu__nav__nav-list ul li:active {
   }
 }
 
-.topics h1 {
+.topi__title h1 {
   color: #060A24;
   font-size: 36px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -504,7 +504,7 @@ header .menu__nav__nav-list ul li:active {
 }
 
 @media only screen and (min-width: 400px) {
-  .topics h1 {
+  .topi__title h1 {
     margin-left: 100px;
     font-size: 48px;
     line-height: 62px;
@@ -512,7 +512,7 @@ header .menu__nav__nav-list ul li:active {
   }
 }
 
-.topics .img-top {
+.topi .svg {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -522,12 +522,12 @@ header .menu__nav__nav-list ul li:active {
   grid-gap: 50px;
 }
 
-.topics .img-top:last-child {
+.topi .svg:last-child {
   margin-bottom: 42px;
 }
 
 @media only screen and (min-width: 400px) {
-  .topics .img-top {
+  .topi .svg {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -535,7 +535,7 @@ header .menu__nav__nav-list ul li:active {
   }
 }
 
-.topics .img-top .boxi {
+.topi .svg__sub {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -548,7 +548,7 @@ header .menu__nav__nav-list ul li:active {
 }
 
 @media only screen and (min-width: 400px) {
-  .topics .img-top .boxi {
+  .topi .svg__sub {
     -ms-grid-columns: 220px;
         grid-template-columns: 220px;
     -ms-grid-rows: 104px 80px;
@@ -556,7 +556,7 @@ header .menu__nav__nav-list ul li:active {
   }
 }
 
-.topics .img-top .boxi h3 {
+.topi .svg__sub h3 {
   color: #060A24;
   text-align: center;
   font-size: 24px;
@@ -564,7 +564,7 @@ header .menu__nav__nav-list ul li:active {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.topics .img-top .boxi img {
+.topi .svg__sub img {
   margin: auto;
 }
 
