@@ -199,7 +199,7 @@ header{
     width: 100%;
     height: 1300px;
     background: $grad_prin;
-    transform: skewY(-6deg);
+    clip-path: polygon(0 5%, 100% 0%, 100% 92%, 0% 100%);
     margin-top: 4px;
     display: flex;
     flex-direction: column;
@@ -207,7 +207,6 @@ header{
         height: 1000px;
     }
     &__title{
-        transform: skewY(6deg);
         position: relative;
         top: 64px;
         margin-left: 16px;
@@ -221,7 +220,6 @@ header{
         }
     }
     .cont{
-        transform: skewY(6deg);
         position: relative;
         top: 64px;
         display: grid;
@@ -362,13 +360,13 @@ header{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-gap:50px;
         &:last-child{
             margin-bottom: 42px;
         }
         @include desktop{
             grid-template-rows: 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 260px 260px 260px 260px;
+            margin-left: 36px;
         }
         &__sub{
             justify-content: center;
@@ -395,14 +393,13 @@ header{
 .end{
     width: 100%;
     height: 385px;
-    transform: skewY(-6deg);
     background: $grad_prin;
+    clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
     @include desktop{
         height: 520px;
     }
     &__p{
         p{
-            transform: skewY(6deg);
             text-align: center;
             position: relative;
             top: 64px;
@@ -418,7 +415,6 @@ header{
         }
     }
     &__bot{
-        transform: skewY(6deg);
         position: relative;
         top: 64px;
         font-family: 'IBM Plex Mono', monospace;
